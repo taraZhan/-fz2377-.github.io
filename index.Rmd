@@ -12,7 +12,7 @@ editor_options:
 
 # Getting to know about Tara Zhan
 
-![](id_image.jpg)
+<img src="id_image.jpg" width="70%"/>
 
 ## About myself
 
@@ -45,14 +45,17 @@ microscopy techniques.
 
 I love skiing, drawing, soccer, hiking, shopping, and party.
 
-I have a Devon Rex cat, named Bobby. ![](bobby.jpg)
+I have a Devon Rex cat, named Bobby.
+
+<img src="bobby.jpg" width="50%"/>
 
 ## Contact
 
-fz2377\@cumc.columbia.edu
+Email: fz2377\@cumc.columbia.edu
 
 ## External Links
 
 [*8105 Home Page*](https://p8105.com/schedule.html)
 
-[Github Link to Homework 4](https://github.com/taraZhan/-fz2377-.github.io.git)
+[Github Link to Homework
+4](https://github.com/taraZhan/-fz2377-.github.io.git)
