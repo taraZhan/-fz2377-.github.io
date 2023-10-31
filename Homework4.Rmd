@@ -4,27 +4,61 @@ author: "Tara Zhan"
 date: "2023-10-29"
 output: html_document
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(dplyr)
+library(ggplot2)
+# Load the instacart data
+data(instacart)
+# Tidy the dataset
+instacart_df = instacart |>
+  select(product_id, add_to_cart_order, reordered, days_since_prior_order, order_hour_of_day, aisle, department) |>
+  mutate(text_label = str_c("Product: ", product_id, 
+                            "\nAdd to cart order: ", add_to_cart_order, 
+                            "\nReordered: ", reordered,
+                            "\nDays since prior order: ", days_since_prior_order))
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+### Plotly Barchart about Count of orders (over 10000 times) by aisle
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+filtered_aisles = instacart_df |>
+  group_by(aisle, department) |>
+  summarise(item_count = n()) |>
+  filter(item_count > 10000) |>
+  arrange(item_count)
+plot_ly(data = filtered_aisles, x = ~aisle, y = ~item_count, color = ~department, type = "bar", colors = "viridis") |>
+  layout(title = "Items Ordered Over 10000times from Each Aisle",
+         xaxis = list(title = "Aisle Names"),
+         yaxis = list(title = "Number of Items Ordered"),
+         colorbar = list(title = "Departments"))
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+### Plotly Boxplot about Reordered Frequency within A Week on Different Departments
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+filtered_reorder = instacart_df |>
+  filter(reordered == 1, days_since_prior_order < 7) |>
+  group_by(department, days_since_prior_order) |>
+  summarise(item_count = n()) |>
+  arrange(item_count)
+plot_ly(data = filtered_reorder, y = ~item_count, x = ~department, color = ~days_since_prior_order, type = "box", colors = "viridis") |>
+  layout(title = "Reordered Frequency within A Week on Different Departments",
+         xaxis = list(title = "Department Names"),
+         yaxis = list(title = "Reordered Frequency"),
+         colorbar = list(title = "Days Since Lastorder (within a week)"))
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+### Plotly Scatterplot about Frequency of ordering in a day of different departments
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+filtered_hour = instacart_df |>
+  filter(add_to_cart_order == 1) |>
+  group_by(department, order_hour_of_day) |>
+  summarise(item_count = n()) |>
+  arrange(item_count)
+plot_ly( data = filtered_hour, x = ~order_hour_of_day, type = "scatter", mode = "markers", color = ~department, alpha = 0.5, colors = "viridis") |>
+  layout(title = "Frequency of ordering in a day of different departments",
+         xaxis = list(title = "Hours in a Day"),
+         yaxis = list(title = "Frequency of Ordering"),
+         colorbar = list(title = "Department Names"))
+```

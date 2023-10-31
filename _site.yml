@@ -1,0 +1,18 @@
+name: "Homework_4"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "Homework4"
+      href: Homework4.html
+    - text: "Research"
+      href: Research.html
+    - text: "Working"
+      href: Working.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<fz2377@cumc.columbia.edu>
+    - icon: fa-github fa-lg
+      href: https://github.com/taraZhan/-fz2377-.github.io.git
+output:
+  html_document:
+    theme: cerulean

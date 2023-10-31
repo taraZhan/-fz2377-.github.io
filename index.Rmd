@@ -1,12 +1,58 @@
 ---
-title: "My awesome website"
+title: "Introduction of Tara Zhan"
 output: 
   html_document:
     toc: true
     toc_float: true
     theme: cerulean
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
-# This is Jeff's awesome website
+# Getting to know about Tara Zhan
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+![](id_image.jpg)
+
+## About myself
+
+My name is Fei (Tara) Zhan, UNI: fz2377, currently a Master of Science
+student from the department of epidemiology at Mailman School of Public
+Health. I am interested in the field of chronic epidemic disease,
+especially curious about the relationship about how can nutrition in
+molecular level cause or induce diseases.
+
+I am taking this course to further enhance my coding skills.
+
+## Education
+
+I am graduated from University of California, Santa Barbara, with a
+Bachelor of Science degree in Biological Science.
+
+## Skills
+
+Exceptional interpersonal skills, adept at networking and effectively
+communicating with diverse groups of people. Strong presentation skills
+and a collaborative team player.
+
+Proficient in Microsoft Office Suite, Python and R programming
+languages.
+
+Skilled in RNAi, PCR, GFP analysis, and proficient in light and electron
+microscopy techniques.
+
+## Fun facts
+
+I love skiing, drawing, soccer, hiking, shopping, and party.
+
+I have a Devon Rex cat, named Bobby. ![](bobby.jpg)
+
+## Contact
+
+fz2377\@cumc.columbia.edu
+
+## External Links
+
+[*8105 Home Page*](https://p8105.com/schedule.html)
+
+[Github Link to Homework 4](https://github.com/taraZhan/-fz2377-.github.io.git)

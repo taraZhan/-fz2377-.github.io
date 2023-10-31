@@ -1,0 +1,87 @@
+---
+title: "Research Experience"
+author: "Tara Zhan"
+date: "2023-10-29"
+output: html_document
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+## Independent Research
+
+**Genital Morphology of California Land Snails From Family *Xanthonychidae*** (Aug. 2022 - Mar. 2023)
+
+Advisers: Professor Dr. Christopher J. Evelyn, Biologist Dave Goodward\
+Location: UCSB, Faculty Research Assistance Program (Department of Ecology, Evolution and Marine Biology)
+
+-   Researched on sexual behaviors and conflicts in genital morphology of simultaneous hermaphrodite shouderband snails and analyzed 12 species' reproductive organ lengths.
+
+-   Collected snails from field sites then dissected, contacted and collected specimens from museums.
+
+-   Learned to utilize digital measuring softwares and R programming, to record and transcrib measured data of snails' reproductive organs.
+
+-   Strong positive correlation found between the length of male and female copulatory organs, in which proofed mating behaviors can affect the genital morphology in snails.
+    The collection between spermatophore length and sperm storage organ also support the idea.
+
+-   Conducted extensive literature reviews on hermaphrodites, such as their reproductive system, and the role of sexual behaviors and sexual conflicts, to understand the evolutionary forces driving hermaphroditism.
+
+-   Proposed future directions include expanding sample size, studying organ variability, and exploring adaptive significance of copulatory organ morphology.
+
+## Research Assistant
+
+**Climate Change and Dengue Fever** (Jul. 2022 - Aug. 2022)
+
+Location: UCSB, EEMB159 -- Tropical Ecology
+
+-   Researched on the spread of Dengue Fever and analyzed the impact of environmental factors on its transmission.
+
+-   Utilized C++ programming to forecast mosquitoes' vector capacity, its correlation to disease transmission rate, and its impacts on human (recovery rate and death rate).
+
+-   Discovered a significant correlation between temperature and Dengue transmission within the range of 20-35 degrees Celsius.
+
+-   Read literature reviews on Dengue Fever and tropical diseases, to better understand the spreading of disease and control it effectively.
+
+## Research Assistant 
+
+**How the W-allele Frequency of Drosophila Melanogaster Under Light and Dark Treatments Can Reflect the Natural Selection Research** (Apr. 2021 - Jun. 2021)
+
+Advisers: Professor Dr. Yvonne Dinh
+
+-   Determined the frequencies of w- and wt- alleles, to have a better understanding of how natural selection played a part in Drosophila's vision.
+
+-   Mated 40 virgin flies with both alleles in the light and dark environments separately, and the changes in the frequency of two alleles.
+
+-   Discoved that flies with wt-allele took advantage of mate and reproduce under both light and dark environments.
+    So, the environment can lead the natural selection to change alleles' frequency and result in greater fitness for offspring to survive.
+
+## Research Assistant 
+
+**A Genetics Study on the Chemotaxis of *C. Elegans* based on *mnp-1* and *dpy-2* through RNAi** (Feb. 2021 - Mar. 2021)
+
+Research Advisers: Professor Dr. Alice Nguyen
+
+-   Studied the basic genetic concepts: Mendelian inheritance, Penetrance, Sex-linkage, Autosomal-linkage, and Complementation test.
+
+-   Utilized RNA interference to determine the effect of genes (mnp-1 and dpy-2) on the chemotaxis behavior of C.
+    Elegans.
+
+-   Generated male worms for complementation test and cloned hermaphrodites for linkage analysis, studying Mendelian ratios.
+    Identify and selected recombinants to calculate genetic map distances.
+
+-   Discovered that gene mnp-1 is not involved in the nervous system.
+
+## Research Assistant
+
+Time: Jun. 2020 - Oct. 2020
+
+Location: University of Shandong, Cytology Laboratory of Biology and Physics Research Institute
+
+-   Assisted the chief researcher in conducting experiments, including tests and samples preparation, analysis, and data processing.
+
+-   Managed chemical reagents for cell-culture fluid extraction and maintained records of reagent usage and corresponding results.
+
+-   Coordinated experiment preparation and documented experiment results.
+
+-   Demonstrated strong knowledge and understanding of cytology to carry out assigned experimental tasks accurately.
+    Learn relevant experimental skills, including extracting rat-cardiac fibroblasts, cryopreserving and thawing cells, culturing cell fluid, and cultivating cell passages.

@@ -1,0 +1,65 @@
+---
+title: "Working Experience"
+author: "Tara Zhan"
+date: "2023-10-29"
+output: html_document
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+## Curator
+
+**Consortium of Small Vertebrate Collections** (Nov.2022 -- Mar. 2023)
+
+Company: Cheadle Center For Biodiversity & Ecological Restoration at UCSB
+
+-   Assisted in the care and management of specimens in Herpetology, Mammalogy, and Ornithology, including extensive alcohol-preserved specimens, dry osteological holdings, tissue samples, and other materials.
+
+-   Categorized and maintained accurate records of specimens, ensuring efficient organization and retrieval.
+
+-   Collaborated with the team to implement preservation protocols, including specimen cleaning, labeling, and cataloging.
+
+-   Supported researchers and students in accessing and locating specific specimens for study and analysis.
+
+## Tutor
+
+**Tutoring TOEFL and SSAT** (Jan. 2021 - Jul. 2021)
+
+Company: Insight Education Company, Jinan
+
+-   Conducted individualized tutoring sessions to improve students' English skills, focusing on TOEFL and SSAT preparation.
+
+-   Developed and implemented personalized teaching schemes to cater to each student's learning needs and goals.
+
+-   Administered random tests and in-class contests to assess students' progress and provided comprehensive feedback to parents.
+
+-   Fostered a supportive and engaging learning environment to enhance students' confidence and motivation.
+
+## Learning Assistant 
+
+Time: Oct. 2019 - Jan. 2020
+
+Company: UCSB, Chemistry and Physics Lab
+
+-   Provided tutorial guidance to local K-12 students, ensuring they successfully completed experiments.
+
+-   Observed students' performance and adjusted experiments tasks to enhance their understanding of science.
+
+-   Strengthened knowledge and honed experiment skills while teaching.
+
+-   Organized daily research reports and managed routine laboratory documents.
+
+## Intern teacher
+
+**Teaching K-12 Biology and Geography** (May. 2019 - Aug. 2019)
+
+Company: Zhiying Education Inc., Jinan
+
+-   Delivered biology and geography lessons, facilitating discussions to enhance students' understanding.
+
+-   Developed comprehensive teaching schemes tailored to students' varying knowledge proficiency levels, accommodating different learning styles.
+
+-   Incorporated multimedia resources, interactive activities, and real-life examples to make lessons engaging and practical.
+
+-   Monitored students' progress and performance, providing timely feedback, and implementing necessary adjustments to optimize learning outcomes.
