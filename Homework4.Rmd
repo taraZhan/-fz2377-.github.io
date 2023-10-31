@@ -37,12 +37,9 @@ plot_ly(data = filtered_aisles, x = ~aisle, y = ~item_count, color = ~department
 
 ### Plotly Boxplot about Reordered Frequency within A Week on Different Departments
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
-filtered_reorder = instacart_df |>
+instacart_df |>
   filter(reordered == 1, days_since_prior_order < 7) |>
-  group_by(department, days_since_prior_order) |>
-  summarise(item_count = n()) |>
-  arrange(item_count)
-plot_ly(data = filtered_reorder, y = ~item_count, x = ~department, color = ~days_since_prior_order, type = "box", colors = "viridis") |>
+  plot_ly(y = ~days_since_prior_order, color = ~department, type = "box", colors = "viridis") |>
   layout(title = "Reordered Frequency within A Week on Different Departments",
          xaxis = list(title = "Department Names"),
          yaxis = list(title = "Reordered Frequency"),
