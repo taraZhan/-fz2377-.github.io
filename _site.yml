@@ -5,6 +5,8 @@ navbar:
   right:
     - text: "Homework4"
       href: Homework4.html
+    - text: "Flexdashboard"
+      href: flexdashboard.html
     - text: "Research"
       href: Research.html
     - text: "Working"

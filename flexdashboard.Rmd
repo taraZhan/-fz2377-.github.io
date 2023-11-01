@@ -24,8 +24,9 @@ instacart_df = instacart |>
                             "\nReordered: ", reordered,
                             "\nDays since prior order: ", days_since_prior_order))
 ```
-
-### Chart A
+Column {data-width=650}
+-----------------------------------------------------------------------
+### Barchart
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 instacart_df |>
@@ -39,8 +40,9 @@ instacart_df |>
          yaxis = list(title = "Number of Items Ordered"),
          colorbar = list(title = "Departments"))
 ```
-
-### Chart B
+Column {data-width=350}
+-----------------------------------------------------------------------
+### Boxchart
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 instacart_df |>
@@ -52,7 +54,7 @@ instacart_df |>
          colorbar = list(title = "Days Since Lastorder (within a week)"))
 ```
 
-### Chart C
+### Scatterchat
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 instacart_df |>
