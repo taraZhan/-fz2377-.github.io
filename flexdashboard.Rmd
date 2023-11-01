@@ -1,0 +1,68 @@
+---
+title: "flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+
+library(flexdashboard)
+
+# Load the instacart data
+data(instacart)
+# Tidy the dataset
+instacart_df = instacart |>
+  select(product_id, add_to_cart_order, reordered, days_since_prior_order, order_hour_of_day, aisle, department) |>
+  mutate(text_label = str_c("Product: ", product_id, 
+                            "\nAdd to cart order: ", add_to_cart_order, 
+                            "\nReordered: ", reordered,
+                            "\nDays since prior order: ", days_since_prior_order))
+```
+
+### Chart A
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+instacart_df |>
+  group_by(aisle, department) |>
+  summarise(item_count = n()) |>
+  filter(item_count > 10000) |>
+  arrange(item_count) |>
+  plot_ly(x = ~aisle, y = ~item_count, color = ~department, type = "bar", colors = "viridis") |>
+  layout(title = "Items Ordered Over 10000times from Each Aisle",
+         xaxis = list(title = "Aisle Names"),
+         yaxis = list(title = "Number of Items Ordered"),
+         colorbar = list(title = "Departments"))
+```
+
+### Chart B
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+instacart_df |>
+  filter(reordered == 1, days_since_prior_order < 7) |>
+  plot_ly(y = ~days_since_prior_order, color = ~department, type = "box", colors = "viridis") |>
+  layout(title = "Reordered Frequency within A Week on Different Departments",
+         xaxis = list(title = "Department Names"),
+         yaxis = list(title = "Reordered Frequency"),
+         colorbar = list(title = "Days Since Lastorder (within a week)"))
+```
+
+### Chart C
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+instacart_df |>
+  filter(add_to_cart_order == 1) |>
+  group_by(department, order_hour_of_day) |>
+  summarise(item_count = n()) |>
+  arrange(item_count) |>
+  plot_ly(x = ~order_hour_of_day, type = "scatter", mode = "markers", color = ~department, alpha = 0.5, colors = "viridis") |>
+  layout(title = "Frequency of ordering in a day of different departments",
+         xaxis = list(title = "Hours in a Day"),
+         yaxis = list(title = "Frequency of Ordering"),
+         colorbar = list(title = "Department Names"))
+```
