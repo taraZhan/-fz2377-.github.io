@@ -8,8 +8,7 @@ output: html_document
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
-library(dplyr)
-library(ggplot2)
+
 # Load the instacart data
 data(instacart)
 # Tidy the dataset
